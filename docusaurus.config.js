@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'The Global State Management Library for React and React Native',
+  tagline: 'GX is very easy to use and has a very small footprint.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -18,8 +18,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'GX', // Usually your GitHub org/user name.
+  projectName: 'GX WebSite', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -62,7 +62,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/gx-social-card.png',
       navbar: {
         title: 'GX',
         logo: {
@@ -79,7 +79,7 @@ const config = {
           {to: '/docs/api', label: 'API', position: 'left'},
           {to: '/playground', label: 'Playground', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/react-gx/gx',
             label: 'GitHub',
             position: 'right',
           },

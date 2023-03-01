@@ -77,6 +77,36 @@ export default function Home(): JSX.Element {
             </div>
           </div>
         </div>
+        <div className={
+          style.highlights
+        }>
+          <div
+          className={
+            style.highlights__container
+          }>
+            <div>
+              <h2>Lightweight</h2>
+              <p>
+                The library is not heavy at all and not bulky. After
+                installation, it doesn’t take space in your project.
+              </p>
+            </div>
+            <div>
+              <h2>Easy to use</h2>
+              <p>
+                Integrate Gx into your application is too simple, you just have
+                to do some extra configuration.
+              </p>
+            </div>
+            <div>
+              <h2>Performant</h2>
+              <p>
+                Too speed, the state update is done quickly after the action
+                triggered by the user is done.
+              </p>
+            </div>
+          </div>
+        </div>
       </main>
     </Layout>
   );
