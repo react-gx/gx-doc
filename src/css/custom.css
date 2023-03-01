@@ -6,30 +6,7 @@
 
 /* Load fonts */
 
-@font-face {
-  font-family: "Poppins-Regular";
-  src: url("../../static/fonts/poppins/Poppins-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Poppins-Light";
-  src: url("../../static/fonts/poppins/Poppins-Light.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Poppins-Medium";
-  src: url("../../static/fonts/poppins/Poppins-Medium.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Poppins-Bold";
-  src: url("../../static/fonts/poppins/Poppins-Bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Poppins-Black";
-  src: url("../../static/fonts/poppins/Poppins-Black.ttf") format("truetype");
-}
+@import url('https://fonts.cdnfonts.com/css/axiforma');
 
 /* You can override the default Infima variables here. */
 :root {
@@ -58,7 +35,7 @@
 }
 
 * {
-  font-family: "Poppins-Regular" !important;
+  font-family: 'Axiforma', sans-serif;
 }
 
 .footer {
