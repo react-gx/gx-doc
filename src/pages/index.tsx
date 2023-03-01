@@ -24,7 +24,7 @@ export default function Home(): JSX.Element {
       description="React and React Native library for managing global state"
     >
       <ToastContainer />
-      <main className={style.main}>
+      <main>
         <div className={style.hero}>
           <div className={style.hero__container}>
             <h1 className={style.heroTitle}>
