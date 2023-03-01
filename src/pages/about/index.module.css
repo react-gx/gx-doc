@@ -1,0 +1,134 @@
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+}
+.team__container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 1280px;
+  max-width: 95%;
+  padding: 3rem 0;
+}
+.teamIntro {
+  width: 100%;
+  border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 3rem;
+}
+.teamIntro h1 {
+  font-size: calc(2rem + 1vw);
+  font-weight: 500;
+  color: #11314f;
+  font-family: "Inter", sans-serif;
+}
+.teamIntro p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #555555;
+  font-family: "Inter", sans-serif;
+}
+.teamMember {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  width: 100%;
+  padding: 2rem 0;
+}
+.teamMember_card {
+  position: relative;
+  background: #f9f9f9;
+  border: 1px solid #f9f9f9;
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: start;
+  gap: 1.5rem;
+}
+.teamMember_cardImage {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.teamMember_cardInfos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.teamMember_cardInfos h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #11314f;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+.teamMember_cardInfos p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555555;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+.teamMember_cardInfos span {
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #555555;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: .5rem 0 1rem 0;
+}
+.teamMember_cardInfos div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.teamMember_cardInfos div a:hover svg path:last-child {
+  fill: #39a0ff;
+}
+.teamMember_cardGithub {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  color: #39a0ff;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  border: 2px solid #39a0ff;
+  text-decoration: none;
+  transition: .3s;
+}
+.teamMember_cardGithub:hover {
+    background: #39a0ff;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1280px) {
+    .teamMember_card {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+@media screen and (max-width: 810px) {
+    .teamMember {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 810px) {
+    .teamMember_cardGithub {
+        font-size: 0.8rem;
+        padding: 0.5rem 0.8rem;
+        border: 1px solid #39a0ff;
+        font-weight: 400;
+    }
+}
