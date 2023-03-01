@@ -6,10 +6,11 @@ import Layout from "@theme/Layout";
 export default function Home(): JSX.Element {
   return (
     <Layout
-      title={`Welcome to Gx`}
+      title={`Welcome`}
       description="React and React Native library for managing global state"
+      wrapperClassName="landingPage"
     >
-      <main>
+      <main className="landingPage">
         <h1>Landing Page</h1>
       </main>
     </Layout>
