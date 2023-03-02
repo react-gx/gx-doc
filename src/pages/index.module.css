@@ -18,6 +18,7 @@
   line-height: 1.2;
   text-align: center;
   color: #11314f;
+  font-family: 'Axiforma', sans-serif;
 }
 
 .heroTitle_span {
@@ -36,6 +37,7 @@
   text-align: center;
   color: #676767;
   padding: 0.5rem 0;
+  font-family: 'Axiforma', sans-serif;
 }
 
 .heroButtons {
@@ -59,6 +61,7 @@
 
 .heroButtons a span {
   color: #fff;
+  font-family: 'Axiforma', sans-serif;
   font-size: 1rem;
   font-weight: 500;
   padding-top: 3px;
@@ -91,6 +94,7 @@
 
 .heroButtons button span {
   color: #11314f;
+  font-family: 'Oxygen Mono', sans-serif;
   font-size: 1rem;
   font-weight: 500;
 }
@@ -155,6 +159,7 @@
 .highlightsCard h2{
   margin: 0;
   padding: 1rem 0;
+  font-family: 'Axiforma', sans-serif;
 }
 .highlightsCard p {
   font-size: 1rem;
@@ -163,6 +168,7 @@
   color: #555555;
   padding: 0;
   margin: 0;
+  font-family: 'Axiforma', sans-serif;
 }
 
 @media screen and (max-width: 760px) {
