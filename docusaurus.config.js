@@ -57,7 +57,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/gx-social-card.png',
       navbar: {
-        title: 'GX',
+        title: '',
         logo: {
           alt: 'Gx Logo',
           src: 'img/logo.svg',

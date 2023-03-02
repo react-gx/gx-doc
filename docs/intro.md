@@ -2,15 +2,14 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+**GX** is a `Global State Management Library` for React and React Native. You can use it to manage your application state, and it is based on the concept of **Signals**.
+It is a very simple library, very easy to use, very perfomant and so light.
+
+So let's get started!
 
 ## Getting Started
-
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
 
 ### What you'll need
 

@@ -42,6 +42,10 @@
   /* color: #213547; */
 }
 
+.codeBlockContent_node_modules-* {
+  font-family: sans-serif !important;
+}
+
 .footer {
   background-color: var(--ifm-footer-bg-color);
   color: #fff;
