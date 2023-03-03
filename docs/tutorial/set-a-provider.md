@@ -39,3 +39,5 @@ export default function App() {
   );
 }
 ```
+
+Now let's see how to [use our store](/docs/tutorial/usage.md)

@@ -60,6 +60,7 @@ export default function Home(): JSX.Element {
                   navigator.clipboard.writeText("npm install @dilane3/gx");
                   copyToClipboard();
                 }}
+                title="Copy"
               >
                 <span>npm install @dilane3/gx</span>
                 <svg

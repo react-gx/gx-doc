@@ -12,6 +12,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #39A0FF;
