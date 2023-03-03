@@ -1,0 +1,8 @@
+{
+  "label": "Guide",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Guide - Let's see in detail how to use the library"
+  }
+}

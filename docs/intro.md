@@ -2,46 +2,77 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+**GX** is a `Global State Management Library` for React and React Native. You can use it to manage your application state, and it is based on the concept of **Signals**.
+It is a very simple library, very easy to use, very perfomant and so light.
 
-## Getting Started
+So let's get started!
 
-Get started by **creating a new site**.
+## Installation
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
+Using npm:
 ```bash
-npm init docusaurus@latest my-website classic
+npm install @dilane3/gx
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
+Using yarn:
 ```bash
-cd my-website
-npm run start
+yarn add @dilane3/gx
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+## Pre-requisites
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+To use GX properly, you need to disable the `Strict Mode` in your React or React Native application. The reason is that, while `Strict Mode` is enabled, React will make state changes `twice`, and GX will not work properly.
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+To do that, follow the instructions below:
+
+### React
+
+Your `App.js` file should look like this:
+
+```js title="src/App.js"
+import React from 'react';
+import { StrictMode } from 'react';
+
+function App() {
+  return (
+    <StrictMode>
+      <div>My App</div>
+    </StrictMode>
+  );
+}
+
+export default App;
+```
+
+You need to remove the `StrictMode` component, so your `App.js` file should look like this:
+
+```js title="src/App.js"
+import React from 'react';
+
+function App() {
+  return (
+    <div>My App</div>
+  );
+}
+
+export default App;
+```
+
+:::note
+In a `React Native` application, you have to do the same thing, but depending on if you are using `Expo` or not the entry file will be different.
+:::
+
+### Next.js
+
+In a `Next.js` application, the method is a little bit different. You need to create a `next.config.js` file in the root of your project, and add the following code:
+
+```js title="next.config.js"
+module.exports = {
+  reactStrictMode: false,
+}
+```
+
+
+

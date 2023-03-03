@@ -1,0 +1,8 @@
+{
+  "label": "Tutorial",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "5 minutes to learn how to use GX into a react or react native project."
+  }
+}

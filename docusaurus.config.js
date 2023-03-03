@@ -1,58 +1,51 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'The Global State Management Library for React and React Native',
-  tagline: 'GX is very easy to use and has a very small footprint.',
-  favicon: 'img/favicon.ico',
+  title: "The Global State Management Library for React and React Native",
+  tagline: "GX is very easy to use and has a very small footprint.",
+  favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  url: "https://gx.dilane3.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'GX', // Usually your GitHub org/user name.
-  projectName: 'GX WebSite', // Usually your repo name.
+  organizationName: "GX", // Usually your GitHub org/user name.
+  projectName: "GX WebSite", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            "https://github.com/react-gx/gx-doc/tree/main/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -62,68 +55,77 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/gx-social-card.png',
+      image: "img/gx-social-card.png",
       navbar: {
-        title: 'GX',
+        title: "",
         logo: {
-          alt: 'Gx Logo',
-          src: 'img/logo.svg',
+          alt: "Gx Logo",
+          src: "img/logo.svg",
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Docs',
+            type: "doc",
+            docId: "intro",
+            position: "left",
+            label: "Docs",
           },
-          {to: '/docs/api', label: 'API', position: 'left'},
-          {to: '/playground', label: 'Playground', position: 'left'},
+          { to: "/docs/api", label: "API", position: "left" },
           {
-            href: 'https://github.com/react-gx/gx',
-            label: 'GitHub',
-            position: 'right',
+            to: "https://codesandbox.io/s/gx-playground-react-m608mx",
+            label: "Playground",
+            position: "left",
+            target: '_blank'
+          },
+          {
+            href: "https://github.com/react-gx/gx",
+            label: "GitHub",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Docs',
+            title: "Docs",
             items: [
               {
-                label: 'Guide',
-                to: '/docs/intro',
+                label: "Guide",
+                to: "/docs/guide/signals",
               },
               {
-                label: 'Tutorial',
-                to: '/docs/tutorial',
+                label: "Tutorial",
+                to: "/docs/tutorial/intro",
               },
               {
-                label: 'API Reference',
-                to: '/docs/api',
+                label: "API Reference",
+                to: "/docs/api",
+              },
+              {
+                label: "Throubleshooting",
+                to: "/docs/throubleshooting",
               },
             ],
           },
           {
-            title: 'About',
+            title: "About",
             items: [
               {
-                label: 'FAQ',
-                href: '/about/faq',
+                label: "FAQ",
+                href: "/docs/faq",
               },
               {
-                label: 'Team',
-                href: '/about/team',
-              }
+                label: "Team",
+                href: "/about/team",
+              },
             ],
           },
           {
-            title: 'More',
+            title: "More",
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/react-gx/gx',
+                label: "GitHub",
+                href: "https://github.com/react-gx/gx",
               },
             ],
           },

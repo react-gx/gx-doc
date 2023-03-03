@@ -20,8 +20,9 @@ export default function Home(): JSX.Element {
     });
   return (
     <Layout
-      title={`Welcome to Gx`}
+      title={`Welcome`}
       description="React and React Native library for managing global state"
+      wrapperClassName="landingPage"
     >
       <ToastContainer />
       <main>
@@ -59,6 +60,7 @@ export default function Home(): JSX.Element {
                   navigator.clipboard.writeText("npm install @dilane3/gx");
                   copyToClipboard();
                 }}
+                title="Copy"
               >
                 <span>npm install @dilane3/gx</span>
                 <svg
