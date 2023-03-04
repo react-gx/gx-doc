@@ -77,6 +77,10 @@ const config = {
             target: '_blank'
           },
           {
+            type: 'search',
+            position: 'right',
+          },
+          {
             href: "https://github.com/react-gx/gx",
             label: "GitHub",
             position: "right",
