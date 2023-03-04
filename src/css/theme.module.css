@@ -1,0 +1,18 @@
+.hero__title_dark {
+  background: linear-gradient(90deg, #39a0ff 0%, #21af90 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero__subtitle_dark {
+  color: #c5c5c5;
+}
+
+.hightlights__container {
+  border-top: 1px solid #4e4e4e;
+  border-bottom: none;
+}
+
+.hightlights__card p {
+  color: #c5c5c5;
+}
