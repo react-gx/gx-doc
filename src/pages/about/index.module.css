@@ -2,8 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid #e7e7e7;
-  border-bottom: 1px solid #e7e7e7;
 }
 .team__container {
   display: flex;
@@ -49,6 +47,7 @@
 }
 .teamMember_cardImage {
   flex-shrink: 0;
+  align-self: center;
   width: 120px;
   height: 120px;
   border-radius: 10px;
@@ -80,7 +79,7 @@
   color: #555555;
   font-family: "Inter", sans-serif;
   margin: 0;
-  padding: .5rem 0 1rem 0;
+  padding: 0.5rem 0 0.5rem 0;
 }
 .teamMember_cardInfos div {
   display: flex;
@@ -105,30 +104,34 @@
   font-family: "Inter", sans-serif;
   border: 2px solid #39a0ff;
   text-decoration: none;
-  transition: .3s;
+  transition: 0.3s;
 }
 .teamMember_cardGithub:hover {
-    background: #39a0ff;
-    color: #fff;
-    text-decoration: none;
+  background: #39a0ff;
+  color: #fff;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1280px) {
-    .teamMember_card {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
+  .teamMember_card {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .teamMember_cardImage {
+    align-self: flex-start;
+  }
 }
 @media screen and (max-width: 810px) {
-    .teamMember {
-        grid-template-columns: 1fr;
-    }
+  .teamMember {
+    grid-template-columns: 1fr;
+  }
 }
 @media screen and (max-width: 810px) {
-    .teamMember_cardGithub {
-        font-size: 0.8rem;
-        padding: 0.5rem 0.8rem;
-        border: 1px solid #39a0ff;
-        font-weight: 400;
-    }
+  .teamMember_cardGithub {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #39a0ff;
+    font-weight: 400;
+  }
 }

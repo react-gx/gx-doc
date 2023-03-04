@@ -4,15 +4,40 @@
   -webkit-text-fill-color: transparent;
 }
 
-.hero__subtitle_dark {
+.hero__subtitle_dark,
+.hightlights__card p,
+.team__intro p {
   color: #c5c5c5;
 }
 
-.hightlights__container {
+.hightlights__container,
+.team__dark {
   border-top: 1px solid #4e4e4e;
   border-bottom: none;
 }
 
-.hightlights__card p {
+/* Team section */
+
+.team__intro {
+  border-bottom: 1px solid #4e4e4e;
+}
+
+.team__intro h1,
+.team__card_info h3 {
+  color: var(--ifm-color-primary);
+}
+
+.team__card_icons a svg path:last-child {
+  fill: var(--ifm-color-primary);
+}
+
+.team__card {
+  background-color: #282a36;
+  border: 1px solid #383838;
+}
+
+.team__card_info p,
+.team__card_info span {
   color: #c5c5c5;
 }
+
