@@ -3,7 +3,6 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import style from "./index.module.css";
-
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -18,6 +17,7 @@ export default function Home(): JSX.Element {
       draggable: true,
       progress: undefined,
     });
+  
   return (
     <Layout
       title={`Welcome`}
