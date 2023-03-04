@@ -58,6 +58,10 @@
   font-family: "Axiforma", sans-serif;
 }
 
+.navbar-sidebar--show {
+  backdrop-filter: none !important;
+}
+
 @media (min-width: 1000px) {
   nav.navbar.navbar--fixed-top {
     backdrop-filter: blur(25px);
