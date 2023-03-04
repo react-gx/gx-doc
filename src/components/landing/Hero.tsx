@@ -9,17 +9,17 @@ type Props = {
 };
 
 export default function Hero({ onCopyToClipboard }: Props) {
-  const { isDarkTheme } = useColorMode();
+  const { colorMode } = useColorMode();
 
   return (
     <div className={style.hero}>
       <div className={style.hero__container}>
-        <h1 className={`${style.heroTitle} ${isDarkTheme && themeStyle.hero__title_dark}`}>
+        <h1 className={`${style.heroTitle} ${colorMode === "dark" && themeStyle.hero__title_dark}`}>
           The{" "}
           <span className={style.heroTitle_span}>Global State Management</span>{" "}
           Library for React and React Native
         </h1>
-        <p className={`${style.heroSubtitle} ${isDarkTheme && themeStyle.hero__subtitle_dark}`}>
+        <p className={`${style.heroSubtitle} ${colorMode === "dark" && themeStyle.hero__subtitle_dark}`}>
           A lightweight, easy to use and performant library for managing global
           state.
         </p>

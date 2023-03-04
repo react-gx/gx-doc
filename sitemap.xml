@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.gx.dilane3.com/</loc>
+  <lastmod>2023-03-04T20:29:29+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.gx.dilane3.com/docs/intro</loc>
+  <lastmod>2023-03-04T20:29:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.gx.dilane3.com/docs/guide/signals</loc>
+  <lastmod>2023-03-04T20:29:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.gx.dilane3.com/docs/tutorial/intro</loc>
+  <lastmod>2023-03-04T20:29:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.gx.dilane3.com/docs/throubleshooting</loc>
+  <lastmod>2023-03-04T20:29:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.gx.dilane3.com/docs/faq</loc>
+  <lastmod>2023-03-04T20:29:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.gx.dilane3.com/about/team</loc>
+  <lastmod>2023-03-04T20:29:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.gx.dilane3.com/docs/category/tutorial</loc>
+  <lastmod>2023-03-04T20:29:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.gx.dilane3.com/docs/category/guide</loc>
+  <lastmod>2023-03-04T20:29:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.gx.dilane3.com/docs/guide/store</loc>
+  <lastmod>2023-03-04T20:29:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.gx.dilane3.com/docs/guide/provider</loc>
+  <lastmod>2023-03-04T20:29:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.gx.dilane3.com/docs/category/hooks</loc>
+  <lastmod>2023-03-04T20:29:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.gx.dilane3.com/docs/guide/hooks/useSignal</loc>
+  <lastmod>2023-03-04T20:29:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.gx.dilane3.com/docs/guide/hooks/useAction</loc>
+  <lastmod>2023-03-04T20:29:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.gx.dilane3.com/docs/tutorial/create-a-signal</loc>
+  <lastmod>2023-03-04T20:29:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.gx.dilane3.com/docs/tutorial/create-a-store</loc>
+  <lastmod>2023-03-04T20:29:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.gx.dilane3.com/docs/tutorial/set-a-provider</loc>
+  <lastmod>2023-03-04T20:29:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.gx.dilane3.com/docs/tutorial/usage</loc>
+  <lastmod>2023-03-04T20:29:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.gx.dilane3.com/docs/tutorial/congratulation</loc>
+  <lastmod>2023-03-04T20:29:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

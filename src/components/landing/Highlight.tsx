@@ -4,18 +4,18 @@ import themeStyle from "../../css/theme.module.css";
 import { useColorMode } from "@docusaurus/theme-common";
 
 export default function Highlight() {
-  const { isDarkTheme } = useColorMode();
+  const { colorMode } = useColorMode();
 
   return (
     <div
       className={`${style.highlights} ${
-        isDarkTheme && themeStyle.hightlights__container
+        colorMode === "dark" && themeStyle.hightlights__container
       }`}
     >
       <div className={style.highlights__container}>
         <div
           className={`${style.highlightsCard} ${
-            isDarkTheme && themeStyle.hightlights__card
+            colorMode === "dark" && themeStyle.hightlights__card
           }`}
         >
           <div>
@@ -40,7 +40,7 @@ export default function Highlight() {
         </div>
         <div
           className={`${style.highlightsCard} ${
-            isDarkTheme && themeStyle.hightlights__card
+            colorMode === "dark" && themeStyle.hightlights__card
           }`}
         >
           <div>
@@ -65,7 +65,7 @@ export default function Highlight() {
         </div>
         <div
           className={`${style.highlightsCard} ${
-            isDarkTheme && themeStyle.hightlights__card
+            colorMode === "dark" && themeStyle.hightlights__card
           }`}
         >
           <div>
