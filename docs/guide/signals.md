@@ -12,7 +12,23 @@ During the creation of the signal, you fill in the resources like **state**, **a
 
 This function is used to create a signal. It takes an object as a parameter and returns the created signal.
 
-The object must contain the following properties:
+```js
+const counterSignal = createSignal({
+  name: "counter",
+  state: 0,
+  actions: {
+    increment: (state, payload) => {
+      return state + payload;
+    },
+
+    decrement: (state, payload) => {
+      return state - payload;
+    },
+  },
+});
+```
+
+The object parameter must contain the following properties:
 
 | Properties | Type     | Description                                            |
 | ---------- | -------- | ------------------------------------------------------ |
