@@ -13,7 +13,7 @@ During the creation of the store you have to fill in all the signals of the appl
 This function is used to create the application's store. It takes an array of signals as a parameter and returns created the store.
 
 ```js
-export default createStore([usersSignal, productsSignal, ordersSignal]);
+export default createStore([productsSignal, usersSignal, ordersSignal]);
 ```
 
 ## What's next ?

@@ -12,4 +12,4 @@ It takes the name of the [signal](/docs/guide/signals.md) as a the first paramet
 const { saveProducts, removeFirstProducts } = useAction("products");
 ```
 
-If you want to get the state of the signal, use the [useSignal](/docs/guide/hooks/useSignal.md.md) hook instead.
+If you want to get the state of the signal, use the [useSignal](/docs/guide/hooks/useSignal.md) hook instead.
