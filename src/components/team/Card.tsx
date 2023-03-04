@@ -16,18 +16,18 @@ type Props = {
 }
 
 export default function Card({ member }: Props) {
-  const { isDarkTheme } = useColorMode();
+  const { colorMode } = useColorMode();
 
   return (
-    <div className={`${style.teamMember_card} ${isDarkTheme && themeStyle.team__card}`}>
+    <div className={`${style.teamMember_card} ${colorMode === "dark" && themeStyle.team__card}`}>
       <div className={style.teamMember_cardImage}>
         <img src={member.img} alt={member.name} />
       </div>
-      <div className={`${style.teamMember_cardInfos} ${isDarkTheme && themeStyle.team__card_info}`}>
+      <div className={`${style.teamMember_cardInfos} ${colorMode === "dark" && themeStyle.team__card_info}`}>
         <h3>{member.name}</h3>
         <p>{member.role}</p>
         <span>From {member.location}</span>
-        <div className={`${isDarkTheme && themeStyle.team__card_icons}`}>
+        <div className={`${colorMode === "dark" && themeStyle.team__card_icons}`}>
           {member.website && (
             <a href={member.website} target="_blank" rel="noopener noreferrer">
               <svg
