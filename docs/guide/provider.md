@@ -4,13 +4,16 @@ sidebar_position: 3
 
 # Provider
 
-The **provider** allows to make elements of the [signals](/docs/guide/signals.md) (state, actions) contained in the [store](/docs/guide/store.md) accessible in the whole application.
+The role of the **provider** is to make your state available everywhere in your application. So, it takes your [store](/docs/guide/store.md) and exposes it globally.
 
 ## GXProvider
 
-It is a component that must be mounted in the root component of the application. It takes the store in props and makes it accessible globally.
+It is a component that must be mounted in the root component of the application. It takes the `store` in props and makes it accessible globally.
 
 ```js
+import GXProvider from "@dilane3/gx";
+// you have to import the store here
+
 function App() {
   return (
     <GXProvider store={store}>

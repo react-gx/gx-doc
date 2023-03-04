@@ -6,27 +6,34 @@ sidebar_position: 1
 
 A **Signal** represent a specific state that your application has to manage. For example, for managing `users` and `products` inside your ecommerce application you will have to create two separate signals called `usersSignal` and `productsSignal`.
 
-During the creation of the signal, you fill in the resources like **state**, **actions** and the **signal name** that will be used in the whole application.
+To create a signal, you have to use a pre-defined function called `createSignal`, and you have to provide an object that contains properties like **state**, **actions** and the **signal name** that will be used in the whole application.
 
 ## createSignal
 
 This function is used to create a signal. It takes an object as a parameter and returns the created signal.
 
 ```js
+import { createSignal } from "@dilane3/gx";
+
 const productsSignal = createSignal({
-  name: "products",
+  name: "product",
   state: [],
   actions: {
-    saveProducts: (state, payload) => {
+    // payload here representes a product
+    addProduct: (state, payload) => {
       return [...state, ...payload];
     },
 
-    removeFirstProducts: (state, payload) => {
-      return state.slice(payload);
+    removeFirstProduct: (state) => {
+      return state.slice(1);
     },
   },
 });
 ```
+
+:::note
+Note that the `payload` argument in an action function is not required, you can skip it.
+:::
 
 The object parameter must contain the following properties:
 

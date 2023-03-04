@@ -7,7 +7,17 @@ sidebar_position: 1
 This hook takes the name of the [signal](/docs/guide/signals.md) as a parameter and returns the state contained inside that signal.
 
 ```js
-const products = useSignal("products");
+const products = useSignal("product");
 ```
 
-If you want to get actions _(methods that allow you to modify this state)_, use the [useAction](/docs/guide/hooks/useAction.md) hook instead.
+:::info
+If you want to get actions _(methods that allow you to modify the state)_, use the [useAction](/docs/guide/hooks/useAction.md) hook instead.
+:::
+
+****
+
+**Structure**
+
+| Properties | Type     | Description                                            |
+| ---------- | -------- | ------------------------------------------------------ |
+| `name`     | `string` | The name of the signal. It must be unique.             |
