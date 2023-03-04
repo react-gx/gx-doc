@@ -108,11 +108,14 @@
   .heroButtons {
     width: 100%;
     flex-direction: column;
-    gap: 1rem;
   }
   .heroButtons a,
   .heroButtons button {
     width: 100%;
+  }
+
+  .heroButtons button {
+    margin-top: 10px;
   }
 }
 
