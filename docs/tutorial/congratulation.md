@@ -13,6 +13,5 @@ So what's next ?
 ## Next
 
 - See the [Guide](/docs/category/guide)
-- See the [API](/docs/api.md)
 - See the [Questions Frequently asked](/docs/faq.md)
 - Do you have any issues ? Get into the [Throubleshooting](/docs/throubleshooting.md) section
