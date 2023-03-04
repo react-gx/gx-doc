@@ -34,6 +34,16 @@ const teamData: {
     website: "https://lndev.me/",
     location: "Cameroon",
   },
+  {
+    id: 3,
+    name: "Ngimdock Zemfack",
+    role: "FullStack Developer",
+    img: "/team/ngimdockzemfack3.png",
+    github: "https://github.com/ngimdock",
+    twitter: "https://twitter.com/NZemfack",
+    website: "https://www.linkedin.com/in/ngimdock-zemfack/",
+    location: "Cameroon",
+  },
 ];
 
 export default function Team() {
