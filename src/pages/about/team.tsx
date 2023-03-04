@@ -38,7 +38,7 @@ const teamData: {
     id: 3,
     name: "Ngimdock Zemfack",
     role: "FullStack Developer",
-    img: "/team/ngimdockzemfack3.png",
+    img: "/team/ngimdockzemfack.png",
     github: "https://github.com/ngimdock",
     twitter: "https://twitter.com/NZemfack",
     website: "https://www.linkedin.com/in/ngimdock-zemfack/",
