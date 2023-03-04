@@ -13,16 +13,16 @@ During the creation of the signal, you fill in the resources like **state**, **a
 This function is used to create a signal. It takes an object as a parameter and returns the created signal.
 
 ```js
-const counterSignal = createSignal({
-  name: "counter",
-  state: 0,
+const productsSignal = createSignal({
+  name: "products",
+  state: [],
   actions: {
-    increment: (state, payload) => {
-      return state + payload;
+    saveProducts: (state, payload) => {
+      return [...state, ...payload];
     },
 
-    decrement: (state, payload) => {
-      return state - payload;
+    removeFirstProducts: (state, payload) => {
+      return state.slice(payload);
     },
   },
 });
