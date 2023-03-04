@@ -69,12 +69,16 @@ const config = {
             position: "left",
             label: "Docs",
           },
-          { to: "/docs/api", label: "API", position: "left" },
+          { to: "/docs/guide/signals", label: "Guide", position: "left" },
           {
             to: "https://codesandbox.io/s/gx-playground-react-m608mx",
             label: "Playground",
             position: "left",
             target: '_blank'
+          },
+          {
+            type: 'search',
+            position: 'right',
           },
           {
             href: "https://github.com/react-gx/gx",
@@ -96,10 +100,6 @@ const config = {
               {
                 label: "Tutorial",
                 to: "/docs/tutorial/intro",
-              },
-              {
-                label: "API Reference",
-                to: "/docs/api",
               },
               {
                 label: "Throubleshooting",

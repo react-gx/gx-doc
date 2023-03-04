@@ -6,17 +6,17 @@
 
 /* Load fonts */
 
-@import url('https://fonts.cdnfonts.com/css/axiforma');
+@import url("https://fonts.cdnfonts.com/css/axiforma");
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #39A0FF;
+  --ifm-color-primary: #39a0ff;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
@@ -24,13 +24,13 @@
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
-  --ifm-footer-bg-color: #11314F;
+  --ifm-footer-bg-color: #11314f;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #39A0FF;
+[data-theme="dark"] {
+  --ifm-color-primary: #39a0ff;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
   --ifm-color-primary-darkest: #1a8870;
@@ -42,12 +42,12 @@
 
 .navbar__item,
 .menu__link {
-  font-family: 'Axiforma', sans-serif;
+  font-family: "Axiforma", sans-serif;
 }
 
 .theme-code-block,
 *.prism-code span {
-  font-family: 'Oxygen Mono' !important;
+  font-family: "Oxygen Mono" !important;
 }
 
 .footer,
@@ -55,5 +55,11 @@
   background-color: var(--ifm-footer-bg-color);
   color: #fff;
   padding: 1rem 0;
-  font-family: 'Axiforma', sans-serif;
+  font-family: "Axiforma", sans-serif;
+}
+
+@media (min-width: 1000px) {
+  nav.navbar.navbar--fixed-top {
+    backdrop-filter: blur(25px);
+  }
 }
