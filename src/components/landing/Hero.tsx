@@ -11,6 +11,8 @@ type Props = {
 export default function Hero({ onCopyToClipboard }: Props) {
   const { colorMode } = useColorMode();
 
+  console.log({ colorMode })
+
   return (
     <div className={style.hero}>
       <div className={style.hero__container}>

@@ -60,7 +60,7 @@ const config = {
         title: "",
         logo: {
           alt: "Gx Logo",
-          src: "img/logo.svg",
+          src: "img/logo.png",
         },
         items: [
           {
@@ -138,12 +138,12 @@ const config = {
       },
       algolia: {
         // The application ID provided by Algolia
-        appId: 'YOUR_APP_ID',
+        appId: 'RFQWJQP9JO',
   
         // Public API key: it is safe to commit it
-        apiKey: 'YOUR_SEARCH_API_KEY',
+        apiKey: '53e0d8d6e2869a317aeccfd74b105208',
   
-        indexName: 'YOUR_INDEX_NAME',
+        indexName: 'doc_gx',
   
         // Optional: see doc section below
         contextualSearch: true,
