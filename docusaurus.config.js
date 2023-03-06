@@ -142,12 +142,12 @@ const config = {
       },
       algolia: {
         // The application ID provided by Algolia
-        appId: process.env.REACT_APP_ALGOLIA_APP_ID,
+        appId: process.env.REACT_APP_ALGOLIA_APP_ID || "APP_ID",
   
         // Public API key: it is safe to commit it
-        apiKey: process.env.REACT_APP_ALGOLIA_API_KEY,
+        apiKey: process.env.REACT_APP_ALGOLIA_API_KEY || "API_KEY",
   
-        indexName: process.env.REACT_APP_ALGOLIA_INDEX_NAME,
+        indexName: process.env.REACT_APP_ALGOLIA_INDEX_NAME || "INDEX_NAME",
   
         // Optional: see doc section below
         contextualSearch: true,
