@@ -44,6 +44,16 @@ const teamData: {
     website: "https://www.linkedin.com/in/ngimdock-zemfack/",
     location: "Cameroon",
   },
+  {
+    id: 4,
+    name: "Joël Fah",
+    role: "UI/UX Designer",
+    img: "/team/joelfah.jpeg",
+    github: "https://github.com/Joel-Fah",
+    twitter: "https://twitter.com/FahDejon",
+    website: "https://joelfah.pythonanywhere.com",
+    location: "Cameroon",
+  },
 ];
 
 export default function Team() {
