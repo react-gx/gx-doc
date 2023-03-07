@@ -64,7 +64,7 @@ const config = {
         title: "",
         logo: {
           alt: "Gx Logo",
-          src: "img/logo.png",
+          src: "img/logo.svg",
         },
         items: [
           {
