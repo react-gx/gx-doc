@@ -86,21 +86,27 @@ See the result
 Add hooks importations like follow in your `src/Counter.jsx` file
 
 ```jsx title="src/Counter.jsx"
-import { useSignal, useAction } from "@dilane3/gx";
+import { useSignal, useActions } from "@dilane3/gx";
 ```
 
 :::info
 `useSignal` is used to get state from a specific signal
 
-`useAction` is used to get actions from a specific signal
+`useActions` is used to get actions from a specific signal
+:::
+
+:::info
+The `useActions` hook is available since version `1.2.0`. Earlier, you had to use `useAction` instead.
+
+See the section [useActions and useAction](/docs/guide/hooks/useAction.md) for more explanation
 :::
 
 **Step 4: Use these hooks and set events on buttons**
 
 Update your `Counter` component to make it looking like the following code:
 
-```jsx title="src/Counter.jsx"
-import { useSignal, useAction } from "@dilane3/gx";
+```jsx title="src/Counter.jsx" {6,9,15,18-19}
+import { useSignal, useActions } from "@dilane3/gx";
 import "./styles.css";
 
 export default function Counter() {
@@ -108,7 +114,7 @@ export default function Counter() {
   const counter = useSignal("counter");
 
   // Actions
-  const { increment, decrement } = useAction("counter");
+  const { increment, decrement } = useActions("counter");
 
   return (
     <div className="container">
@@ -132,3 +138,5 @@ See the final result now
 ![Counter app 1](/docs/counter-final.gif)
 
 😍😍😍 very beautiful. It works very fine 😄
+
+You can play with this code in live. Check the [playground](https://codesandbox.io/s/gx-playground-react-m608mx)

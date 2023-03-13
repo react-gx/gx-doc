@@ -44,7 +44,7 @@ After having created the signal and specifying the name and the initial state, w
 
 Update your `signal` like this:
 
-```js title="src/gx/signals/counter.js"
+```js title="src/gx/signals/counter.js" {7-13}
 import { createSignal } from "@dilane3/gx";
 
 const counterSignal = createSignal({

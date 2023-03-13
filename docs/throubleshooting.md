@@ -57,6 +57,26 @@ module.exports = {
 
 ****
 
+## Problem with the importation of actions while using TypeScript
+
+If you have this issue when you want to import actions from your signal, that means you are using the version `1.1.1` or earlier.
+
+We have fix that issue in version `1.2.0`. Please upgrade your package to that version by executing the following command
+
+**with npm**
+```bash
+npm update @dilane3/gx
+```
+
+**with yarn**
+```bash
+yarn upgrade @dilane3/gx
+```
+
+Refer yourself on [TypeScript integration](/docs/typescript.md) to see how you can integrate TypeScript very well into your app.
+
+****
+
 ## Your problem doesn't appear here ?
 
 Please [create an issue](https://github.com/react-gx/gx/issues) to explain to the maintainer your problem.

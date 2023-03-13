@@ -22,7 +22,7 @@ So add the following code in your `index.js` file.
 import { createStore } from "@dilane3/gx";
 import counterSignal from "../signals/counter";
 
-const store createStore([counterSignal]);
+const store = createStore([counterSignal]);
 
 export default store;
 ```

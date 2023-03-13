@@ -31,7 +31,7 @@ To do that, follow the instructions below:
 
 Your `App.js` file should look like this:
 
-```js title="src/App.js"
+```jsx title="src/App.js" {2,6-8}
 import React from 'react';
 import { StrictMode } from 'react';
 
@@ -48,7 +48,7 @@ export default App;
 
 You need to remove the `StrictMode` component, so your `App.js` file should look like this:
 
-```js title="src/App.js"
+```jsx title="src/App.js" {5}
 import React from 'react';
 
 function App() {
