@@ -67,11 +67,17 @@ export default counterSignal;
 All actions should have the same schema: 
 
 ```ts
-action: (State, PayloadArg?) => newState
+action: (state, payload?) => state
 ```
 
 :::info
 The `?` means that, the `payload` is not required.
+:::
+
+:::note
+The `options` object of the `createSignal` functions accepts a fourth property called `operations`. This property is used to define some operations that can be used to act to the state without modifying it but filter or apply a specific logic. [Learn more](/docs/guide/signals.md) 
+
+This feature comes with the version `1.3.0` of `gx`. It allows you to add operations to your signals.
 :::
 
 Now it's ok, we have successfully defined our signal. Let's move to the next step [create a store](/docs/tutorial/create-a-store.md)

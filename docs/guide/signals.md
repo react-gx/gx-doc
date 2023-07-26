@@ -35,13 +35,50 @@ const productsSignal = createSignal({
 Note that the `payload` argument in an action function is not required, you can skip it.
 :::
 
+:::info
+With the version `1.3.0` of `gx`, you can add `operations` to your signals like follow:
+:::
+
+```js
+import { createSignal } from "@dilane3/gx";
+
+const productsSignal = createSignal({
+  name: "product",
+  state: [],
+  actions: {
+    addProduct: (state, payload) => {
+      return [...state, ...payload.product];
+    },
+
+    removeFirstProduct: (state) => {
+      return state.slice(1);
+    },
+  },
+  operations: {
+    isProductExist: (state, payload) => {
+      return state.find((product) => product.id === payload.id);
+    },
+  },
+});
+```
+
+The `isProductExist` operation will be used to check if a product exists in the state and will return the product if it exists or `undefined` if it doesn't exist.
+We can see that the `operations` object has the same schema as the `actions` object but the difference is that the `operations` object doesn't modify the state.
+
+:::info
+The `operations` object is optional, you can skip it.
+
+To know how to use operations, please refer to the [useOperations](/docs/guide/hooks/useOperations) hook.
+:::
+
 The object parameter must contain the following properties:
 
-| Properties | Type     | Description                                            |
-| ---------- | -------- | ------------------------------------------------------ |
-| `name`     | `string` | The name of the signal. It must be unique.             |
-| `state`    | `any`    | The initial state of the signal.                       |
-| `actions`  | `object` | An object that contains all the actions of the signal. |
+| Properties   | Type     | Description                                               | Version     |
+| ------------ | -------- | --------------------------------------------------------- | ----------- |
+| `name`       | `string` | The name of the signal. It must be unique.                | since 1.0.0 |
+| `state`      | `any`    | The initial state of the signal.                          | since 1.0.0 |
+| `actions`    | `object` | An object that contains all the actions of the signal.    | since 1.0.0 |
+| `operations` | `object` | An object that contains all the operations of the signal. | since 1.3.0 |
 
 ## What's next ?
 
