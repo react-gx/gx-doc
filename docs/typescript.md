@@ -115,4 +115,47 @@ By doing like this, `Gx` will add `User` type to your `user` variable directly, 
 
 ### useAction & useActions
 
-There is no change with these hooks
+:::info
+Since version `1.3.0` of `Gx`, you can use Generic types with `useAction` and `useActions` hooks.
+:::
+
+Let's consider the following `CounterActions` action type:
+
+```ts
+type CounterActions = {
+  increment: (payload: number) => number;
+  decrement: (payload: number) => number;
+};
+```
+
+Then, you can use `useActions` hook like follow:
+
+```ts
+const { increment, decrement } = useActions<CounterActions>("counter");
+```
+
+Or, with `useAction` hook
+
+```ts
+const increment = useAction<CounterActions>("counter", "increment");
+```
+
+### useOperations
+
+:::info
+Since version `1.3.0` of `Gx`, you can use Generic types with `useOperations` hook.
+:::
+
+Let's consider the following `ProductsOperations` operation type:
+
+```ts
+type ProductsOperations = {
+  isProductExists: (payload: { id: number }) => Product | undefined;
+};
+```
+
+Then, you can use `useOperations` hook like follow:
+
+```ts
+const { isProductExists } = useOperations<ProductsOperations>("product");
+```
