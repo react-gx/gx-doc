@@ -1,8 +1,8 @@
-import React from "react";
-import Layout from "@theme/Layout";
-import style from "./index.module.css";
-import Description from "@site/src/components/team/Description";
 import Card from "@site/src/components/team/Card";
+import Description from "@site/src/components/team/Description";
+import Layout from "@theme/Layout";
+import React from "react";
+import style from "./index.module.css";
 
 const teamData: {
   id: number;
@@ -52,6 +52,16 @@ const teamData: {
     github: "https://github.com/Joel-Fah",
     twitter: "https://twitter.com/FahDejon",
     website: "https://joelfah.pythonanywhere.com",
+    location: "Cameroon",
+  },
+  {
+    id: 5,
+    name: "Mystro Ken",
+    role: "Software Engineer",
+    img: "https://avatars.githubusercontent.com/u/9021722?v=4",
+    github: "https://github.com/mystroken",
+    twitter: "https://twitter.com/mystroken",
+    website: "https://www.mystroken.com",
     location: "Cameroon",
   },
 ];
