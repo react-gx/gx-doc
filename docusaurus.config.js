@@ -79,6 +79,20 @@ const config = {
             target: '_blank'
           },
           {
+            label: "current: v1.4.0",
+            position: "right",
+            className: "version",
+            style: {
+              color: '#3e4bff',
+              fontWeight: 'bold',
+              fontSize: '0.7rem',
+              borderRadius: '5rem',
+              padding: '0.5rem 1rem',
+              backgroundColor: '#eee',
+            },
+            to: "#"
+          },
+          {
             type: 'search',
             position: 'right',
           },

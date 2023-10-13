@@ -14,7 +14,7 @@ Create a `Counter.jsx` file in the `src` folder which will contain our component
 
 **Step 2: Create the component**
 
-Add the following code inside the `src/Counter.jsx` file:
+Add the following code inside your `src/Counter.jsx` file:
 
 ```jsx title="src/Counter.jsx"
 import "./styles.css";
@@ -83,7 +83,7 @@ See the result
 
 **Step3: Import hooks**
 
-Add hooks importations like follow in your `src/Counter.jsx` file
+Import the necessary hooks like follow in your `src/Counter.jsx` file
 
 ```jsx title="src/Counter.jsx"
 import { useSignal, useActions } from "@dilane3/gx";

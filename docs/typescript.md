@@ -123,8 +123,8 @@ Let's consider the following `CounterActions` action type:
 
 ```ts
 type CounterActions = {
-  increment: (payload: number) => number;
-  decrement: (payload: number) => number;
+  increment: (payload: number) => void;
+  decrement: (payload: number) => void;
 };
 ```
 
@@ -139,6 +139,10 @@ Or, with `useAction` hook
 ```ts
 const increment = useAction<CounterActions>("counter", "increment");
 ```
+
+:::note
+Actions are always `void` type, because they don't return anything, they just modify the state.
+:::
 
 ### useOperations
 
@@ -159,3 +163,48 @@ Then, you can use `useOperations` hook like follow:
 ```ts
 const { isProductExists } = useOperations<ProductsOperations>("product");
 ```
+
+### useAsyncActions
+
+:::info
+Since version `1.4.0` of `Gx`, you can use Generic types with `useAsyncActions` hook.
+:::
+
+Let's consider the following `MoviesAsyncActions` async action type:
+
+```ts
+import { Movie } from "src/entities/movie";
+import { AsyncActionResponse } from "@dilane3/gx";
+
+// The type of the state
+type MoviesState = {
+  movies: Movie[];
+  loading: boolean;
+  error: string;
+};
+
+// The type of the async actions
+type MoviesAsyncActions = {
+  fetchMovies: () => AsyncActionResponse<MoviesState, Movie[]>;
+  createMovie: (payload: Movie) => AsyncActionResponse<MoviesState, Movie>;
+};
+```
+
+Then, you can use `useAsyncActions` hook like follow:
+
+```ts
+// Imports MoviesAsyncActions type
+
+const { fetchMovies, createMovie } = useAsyncActions<MoviesAsyncActions>(
+  "movies"
+);
+```
+
+The predefined type `AsyncActionResponse` is a generic type that takes two parameters:
+
+- The type of the state
+- The type of the response of the async action
+
+:::note
+The response of the async action is the value that will be returned by the async action.
+:::

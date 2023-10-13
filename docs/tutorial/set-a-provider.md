@@ -6,9 +6,9 @@ sidebar_position: 4
 
 At this time, our `counter signal` has already been created and the `store` has also been set up. So now, what we have to do is the make our `store` available from everywhere in our application.
 
-Let's how to do that.
+Let's see how to do that.
 
-**Step 1: Importations**
+**Step 1: Imports**
 
 Open the `src/App.js` file and add these two imports
 

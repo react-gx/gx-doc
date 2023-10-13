@@ -12,14 +12,18 @@ Through this Tutorial, we'll learn how to setup a global state for a `Counter Ap
 
 ## Objectives
 
-- Create a global state that all the components of the app will access to.
+- Create a global state whose all the components of the app will access to.
 - Define two actions like `increment` and `decrement` for incrementing the counter value to 1 and decrementing it to 1 respectively.
 - Put the state inside a store to make it available from anywhere.
 - Access to both state and actions via two predefined hooks such as `useSignal` and `useAction`.
 
 ## Pre-requisites
 
-We assume that you have already created a new `React` application by using `create-react-app` CLI.
+We assume that you have already created a new `React` application by using `create-react-app` CLI or `Vite` CLI.
+
+:::tip
+We recommend you to use `Vite` CLI because it's faster than `create-react-app` CLI.
+:::
 
 After that, you have to create a new folder (`gx` folder) inside the `src` folder.
 
