@@ -455,4 +455,4 @@ Now you know how to handle errors in your application. 😊
 
 It's over for this section. I hope you enjoyed it and that you learned a lot of things. 😊
 
-The next section will be about [Hooks](/docs/guide/hooks).
+The next section will be about [Hooks](/docs/category/hooks).
