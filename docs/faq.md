@@ -42,6 +42,6 @@ We appreciate your interest! Please check out our [Contribution Guide](https://g
 
 ## Can I use Gx with Javascript and Typescript without any problems ?
 
-Yes ofcourse. Our [Tutorial](/docs/tutorial/intro.md) shows only the use of **JavaScript** but is possible to use it with **TypeScript** too.
+Yes ofcourse. Our [Tutorial](/docs/tutorial/intro.md) shows only the use of **JavaScript** but it is possible to use it with **TypeScript** too.
 
-We are working on this section. If you want to contribute on this part, it will be appreciated 🙏 See the [Guide](https://github.com/react-gx/gx/blob/main/CONTRIBUTING.md) if so.
+See the section [Use Gx with TypeScript](/docs/typescript.md) for more explanation.

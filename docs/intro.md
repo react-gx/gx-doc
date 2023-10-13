@@ -23,7 +23,11 @@ yarn add @dilane3/gx
 
 ## Pre-requisites
 
-To use GX properly, you need to disable the `Strict Mode` in your React or React Native application. The reason is that, while `Strict Mode` is enabled, React will make state changes `twice`, and GX will not work properly.
+:::info
+Since the version `1.4.0`, `GX` works very well in `Strict Mode` in React and React Native applications.
+:::
+
+For versions before `1.4.0`, you need to disable `Strict Mode` in your application.
 
 To do that, follow the instructions below:
 

@@ -14,6 +14,9 @@ This function is used to create the application's store. It takes an array of si
 
 ```js
 import { createStore } from "@dilane3/gx";
+import productsSignal from "../signals/products";
+import usersSignal from "../signals/users";
+import ordersSignal from "../signals/orders";
 
 export default createStore([productsSignal, usersSignal, ordersSignal]);
 ```

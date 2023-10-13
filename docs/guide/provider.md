@@ -12,7 +12,7 @@ It is a component that must be mounted in the root component of the application.
 
 ```js
 import GXProvider from "@dilane3/gx";
-// you have to import the store here
+import store from "./gx/store";
 
 function App() {
   return (

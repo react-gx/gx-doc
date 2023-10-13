@@ -4,15 +4,34 @@
 
 ## The state update twice after calling an action ?
 
-The origin of this problem is that you have enabled `Strict Mode`. So you have to disable it.
+If you have this issue, that means you are using the version `1.3.0` or earlier.
 
-How to do that ?
+We have fix that issue in version `1.4.0`. Please upgrade your package to that version by executing one of the following command depending on your package manager.
+
+**with npm**
+```bash
+npm update @dilane3/gx
+```
+
+**with yarn**
+```bash
+yarn upgrade @dilane3/gx
+```
+
+**with pnpm**
+```bash
+pnpm update @dilane3/gx
+```
+
+You don't want to upgrade your package ? No problem, you can fix that issue by yourself.
+
+Follow the steps below:
 
 ### React
 
 Your `App.js` file should look like this:
 
-```js title="src/App.js"
+```jsx title="src/App.jsx"
 import React from 'react';
 import { StrictMode } from 'react';
 
@@ -29,7 +48,7 @@ export default App;
 
 You need to remove the `StrictMode` component, so your `App.js` file should look like this:
 
-```js title="src/App.js"
+```jsx title="src/App.jsx"
 import React from 'react';
 
 function App() {

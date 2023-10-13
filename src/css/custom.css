@@ -14,6 +14,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Lexend:wght@900&family=Outfit:wght@100;300;400;500;700;900&family=Source+Code+Pro&family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
+
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #39a0ff;
@@ -47,7 +50,7 @@
 
 .theme-code-block,
 *.prism-code span {
-  font-family: "Oxygen Mono" !important;
+  font-family: "Source Code Pro" !important;
 }
 
 .footer,

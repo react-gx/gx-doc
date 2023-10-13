@@ -29,14 +29,16 @@ export default counterSignal;
 ```
 
 :::note
-Note that we have to import the `createSignal` function first and use it to create our `counterSignal`.
+Note that you have to import the `createSignal` function first and use it to create your `counterSignal`.
 :::
 
-The `createSignal` function takes only one parameter, an object which should contains exactly 3 properties
+The `createSignal` function takes only one parameter, an object which should contains exactly 5 properties
 
-- name: An identifiant
-- state: An initial state
-- actions: List of actions that act to the state
+- **name (required)**: An identifiant
+- **state (required)**: An initial state
+- **actions (required for version before `1.4.0`)**: List of actions that act to the state
+- **operations (optional)**: List of operations that can be used to act to the state without modifying it but filter or apply a specific logic (available since the version `1.3.0`)
+- **asyncActions (optional)**: List of asynchronous actions that act to the state (available since the version `1.4.0`)
 
 **Step 3: Add actions**
 
